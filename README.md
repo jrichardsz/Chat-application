@@ -1,13 +1,22 @@
 # Chat-application
 Web Chat Application using Golang and Vue.js
 
-#Running the Application
+# Running with go
 To run the application, open a console window and make sure you are in the "src" directory of your application then run the following command.
 
 ```
 $ go run main.go
 
 ```
+
+# Run With docker
+
+
+```
+docker build -t chat .
+docker run --name chat -d --rm -p 8000:8000 chat
+```
+
 Next open a web browser and navigate to "http://localhost:8000". The chat screen will be displayed and you can now enter an email and username.
 
 
